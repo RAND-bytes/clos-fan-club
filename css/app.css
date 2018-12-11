@@ -145,17 +145,4 @@ code {
     background-color: #FFFFFF;
     width: 100%;
     border-top: 1px #C6C6C6 solid;
-}
-
-/* Orbit */
-$white: #fefefe;
-
-.docs-example-orbit-slide {
-  padding: 2rem 4rem;
-  color: $white;
-  max-height: 5%;
-}
-
-.demo-column {
-    height:40000px;
-}
+} 
