@@ -1,4 +1,4 @@
-code {
+.code {
     display: block;
 }
 
@@ -41,7 +41,7 @@ code {
 
 .md-tabs>.tabs>.tabs-title {
     display: table-cell;
-    width: calc(100% / 6);
+    width: calc(100% / 7);
     text-align: center;
 }
 
@@ -52,27 +52,31 @@ code {
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(1)~.slide {
-    left: calc((100% / 6) * 0);
+    left: calc((100% / 7) * 0);
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(2)~.slide {
-    left: calc((100% / 6) * 1);
+    left: calc((100% / 7) * 1);
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(3)~.slide {
-    left: calc((100% / 6) * 2);
+    left: calc((100% / 7) * 2);
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(4)~.slide {
-    left: calc((100% / 6) * 3);
+    left: calc((100% / 7) * 3);
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(5)~.slide {
-    left: calc((100% / 6) * 4);
+    left: calc((100% / 7) * 4);
 }
 
 .md-tabs>.tabs>.tabs-title.is-active:nth-of-type(6)~.slide {
-    left: calc((100% / 6) * 5);
+    left: calc((100% / 7) * 5);
+}
+
+.md-tabs>.tabs>.tabs-title.is-active:nth-of-type(7)~.slide {
+    left: calc((100% / 7) * 6);
 }
 
 .md-tabs>.tabs>.tabs-title>a {
@@ -87,7 +91,7 @@ code {
 
 .slide {
     background: #3ADB76;
-    width: calc(100% / 6);
+    width: calc(100% / 7);
     height: 4px;
     position: relative;
     left: 0;
@@ -145,4 +149,4 @@ code {
     background-color: #FFFFFF;
     width: 100%;
     border-top: 1px #C6C6C6 solid;
-} 
+}
