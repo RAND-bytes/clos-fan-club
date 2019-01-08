@@ -18,10 +18,10 @@ function myClosRewardsValidate() {
         "4f43f6cbb8c3cbed1e3270bdf1806816": "]&Ohuctr&idjoagrit&VOEIer`&tc`ctchec&nctc&["
     }
     var key = md5(document.getElementById("myclosrewardskey").value.toLowerCase());
-    console.log(key) // For generating new serals
+    //console.log(key) // For generating new serals
     if (serials.hasOwnProperty(key)) {
         document.getElementById("closrewardsoutput").innerHTML = xorCrypt(serials[key]);
-        console.log(xorCrypt(serials[key])); // Used to get unencrypted output to console
+        //console.log(xorCrypt(serials[key])); // Used to get unencrypted output to console
         document.getElementById("closrewardsoutput").innerHTML += "</br></br>";
         document.getElementById("myclosrewardskey").value = "";
     } else if (key == "") {
