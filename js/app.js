@@ -14,13 +14,14 @@ function myClosRewardsValidate() {
         "b3cc1467f0911d905b5b4ceb346641b3": "Nc&ou&gh&ghihkisu&dio*&ui&rnou&kcuugac&ou&ucetcr",
         "5660261bf7fc03555e8d0f27b09dc6e5": "Echuitunov&ou&`ohc&gu&jiha&gu&or&egh&dc&sucb&`it&eikcboe&c``cer(&Rnc&:o8]Echuitcb<&Vijoroegj[:)o8&echuitunov&ou&gdnittchr&rnisan(",
         "c13d23675b7a621212c3a6bb07e0e8df": ":g&rgtacr;!Ydjghm!&ntc`;!nrrvu<))btopc(aiiajc(eik)`ojc)b)71W6~tko^W^sYL0ERVmrIeuKB46up>tcG)pocq9suv;ungtoha!8Kt(&:urtiha8Ejiu:)urtiha8&Urgttoha&oh&Msha&@st&gu&Ngemctkgh(:)g8&Msha&@st&ou&g&atcgr&kipoc&DRQ*&qgren&or&:g&rgtacr;!Ydjghm!&ntc`;!nrrvu<))qqq(isrsdc(eik)qgren9p;dU3VYJGwoPa!8nctc&.`it&`tcc'/:)g8",
-        "1adf6d3019fb33d7042fd6c574047dbf": "_is&ngpc&dcch&c~ejsuopcj&ohporcb&ri&pocq&gjj&i``oeogj&:urtiha8Ejiu:)urtiha8&Pobciu'&Geecuu&rnck&gjj&ih&aiiajc&btopc&:g&rgtacr;!Ydjghm!&ntc`;!nrrvu<))btopc(aiiajc(eik)btopc)`ijbctu)7bPIA4?ClE7UaN?2d\\TJsh?42hodqO@9suv;ungtoha!8nctc:)g8"
+        "1adf6d3019fb33d7042fd6c574047dbf": "_is&ngpc&dcch&c~ejsuopcj&ohporcb&ri&pocq&gjj&i``oeogj&:urtiha8Ejiu:)urtiha8&Pobciu'&Geecuu&rnck&gjj&ih&aiiajc&btopc&:g&rgtacr;!Ydjghm!&ntc`;!nrrvu<))btopc(aiiajc(eik)btopc)`ijbctu)7bPIA4?ClE7UaN?2d\\TJsh?42hodqO@9suv;ungtoha!8nctc:)g8",
+        "4f43f6cbb8c3cbed1e3270bdf1806816": "]&Ohuctr&idjoagrit&VOEIer`&tc`ctchec&nctc&["
     }
     var key = md5(document.getElementById("myclosrewardskey").value.toLowerCase());
-    //console.log(key) // For generating new serals
+    console.log(key) // For generating new serals
     if (serials.hasOwnProperty(key)) {
         document.getElementById("closrewardsoutput").innerHTML = xorCrypt(serials[key]);
-        //console.log(xorCrypt(serials[key])); // Used to get unencrypted output to console
+        console.log(xorCrypt(serials[key])); // Used to get unencrypted output to console
         document.getElementById("closrewardsoutput").innerHTML += "</br></br>";
         document.getElementById("myclosrewardskey").value = "";
     } else if (key == "") {
