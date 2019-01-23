@@ -39,4 +39,11 @@ function myClosRewardsReset() {
     document.getElementById("resetButton").style.display = "none";
 }
 
+var birthday = new Date("01/27/2019");
+var todaysDate = new Date();
+
+if(birthday.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)) {
+    // Date equals today's date
+}
+
 //window.onload = myClosRewardsReset();
